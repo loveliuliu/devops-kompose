@@ -10,7 +10,7 @@ jira:
   reverseProxyPort: 443
   reverseProxyScheme: https
   javaHeapSize: 1024m
-  javaMemoryOptions: "-XX:MaxMetaspaceSize=512m -XX:MaxDirectMemorySize=10m"
+  javaMemoryOptions: "-XX:MaxMetaspaceSize=1024m -XX:MaxDirectMemorySize=10m"
   javaOptions: ""
 
 service:
@@ -36,7 +36,13 @@ persistence:
   size: 8Gi
   # existingClaim: existing-pvc
 
-resources: {}
+resources:
+  limits:
+    memory: 2048Mi
+    cpu: 800m
+  requests:
+    memory: 2048Mi
+    cpu: 0
 
 nodeSelector: {}
 
