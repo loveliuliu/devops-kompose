@@ -33,7 +33,7 @@ ingress:
 persistence:
   enabled: true
   accessMode: ReadWriteOnce
-  size: 8Gi
+  size: 20Gi
   # existingClaim: existing-pvc
 
 resources:
