@@ -1,11 +1,15 @@
-apiVersion: v1
-version: 0.1.0
-appVersion: 7.10.1
-description: Project Management Tool for Agile Teams.
-name: atlassian-jira-software
-keywords:
+apiVersion: v1 #官网文档上没有，helm create创建的的模版中有，指k8s API的版本
+version: 0.1.0 #当前Chart的版本，版本规范，打包后的文件名：name-version.tgz，如：nginx-1.2.3.tgz
+appVersion: 7.10.1 #当前Chart包含的应用的版本，比如redis、apache等
+description: JIRA #当前Chart的描述信息
+name: jira #当前Chart的名称
+keywords: #这个包的关键字，用于发布至公共源上作为搜索关键字使用
 - atlassian
 - jira
+- andy's demo
 home: https://www.atlassian.com/software/jira
-sources:
-- https://github.com/cptactionhank/docker-atlassian-jira-software
+sources: #这个是可选项
+- https://github.com/loveliuliu/docker-atlassian-jira-software #helm 包中docker镜像的来源
+maintainers: #维护者
+  - name: chenpengxuan
+    email: chenpengxuan@aliyun.com

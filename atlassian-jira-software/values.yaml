@@ -34,7 +34,7 @@ persistence:
   enabled: true
   accessMode: ReadWriteOnce
   size: 20Gi
-  # existingClaim: existing-pvc
+  existingClaim: existing-pvc
 
 resources:
   limits:
