@@ -6,9 +6,9 @@ releases:
       - ingress:
           enabled: true
           hosts:
-            - jira.example.com
+            - jira.demo.taimei.com
         jira:
-          reverseProxyHost: jira.example.com
+          reverseProxyHost: jira.demo.example.com
         resources:
           limits:
             memory: 1536Mi
