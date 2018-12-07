@@ -1,0 +1,16 @@
+releases:
+  - name: atlassian-jira-software
+    namespace: devops
+    chart: ./atlassian-jira-software
+    values:
+      - ingress:
+          enabled: true
+          hosts:
+            - jira.demo.taimei.com
+        jira:
+          reverseProxyHost: jira.demo.example.com
+        resources:
+          limits:
+            memory: 1536Mi
+          requests:
+            memory: 1536Mi
