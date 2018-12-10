@@ -6,7 +6,7 @@ image:
   pullPolicy: IfNotPresent
 
 jira:
-  reverseProxyHost: jira.example.com
+  reverseProxyHost: jira.example.taimei.com
   reverseProxyPort: 443
   reverseProxyScheme: https
   javaHeapSize: 1024m
@@ -34,7 +34,7 @@ persistence:
   enabled: true
   accessMode: ReadWriteOnce
   size: 20Gi
-  existingClaim: existing-pvc
+  #existingClaim: existing-pvc
 
 resources:
   limits:
