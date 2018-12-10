@@ -31,7 +31,7 @@ ingress:
   #      - chart-example.local
 
 persistence:
-  enabled: true
+  enabled: false
   accessMode: ReadWriteOnce
   size: 20Gi
   #existingClaim: existing-pvc
