@@ -6,7 +6,7 @@ image:
   pullPolicy: IfNotPresent
 
 jira:
-  reverseProxyHost: jira.example.taimei.com
+  reverseProxyHost: jira.example.com
   reverseProxyPort: 443
   reverseProxyScheme: https
   javaHeapSize: 1024m
